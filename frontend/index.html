@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matrix WiFi Radar</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="hud">
+    <h1>WiFi Radar // Matrix Space</h1>
+    <div class="controls">
+      <label><input type="checkbox" id="toggleLabels" checked /> Show SSID</label>
+      <label>Min RSSI <input type="range" id="minRssi" min="-95" max="-30" value="-90" /></label>
+      <label>Band
+        <select id="bandFilter">
+          <option value="all">All</option>
+          <option value="2.4GHz">2.4GHz</option>
+          <option value="5GHz">5GHz</option>
+        </select>
+      </label>
+      <button id="pauseBtn">Pause</button>
+    </div>
+    <pre id="inspect">Click a node to inspect AP metadata.</pre>
+  </div>
+  <canvas id="scene"></canvas>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #0b1020, #020409 45%, #000 100%);
+  color: #79ffda;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+#scene {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  background: rgba(5, 8, 16, 0.72);
+  border: 1px solid rgba(121, 255, 218, 0.35);
+  border-radius: 8px;
+  padding: 10px 12px;
+  backdrop-filter: blur(3px);
+  max-width: min(520px, 90vw);
+}
+#hud h1 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.controls {
+  display: grid;
+  gap: 6px;
+  font-size: 12px;
+}
+#inspect {
+  margin: 10px 0 0;
+  font-size: 11px;
+  color: #abffef;
+  white-space: pre-wrap;
+}
+.label {
+  position: fixed;
+  color: #68ffd8;
+  font-size: 10px;
+  text-shadow: 0 0 6px #00ffc0;
+  pointer-events: none;
+  opacity: 0.9;
+}
